@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Lean
+/lean/.lake/
+/lean/lake-packages/
+/lean/build/
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local execution artifacts (do NOT commit these — only the canonical CSVs in proofs/ are tracked)
+*.log
+*.tmp
+local_*.csv

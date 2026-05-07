@@ -1,0 +1,5 @@
+arch,family,in_scope_of_prop1,K,C_in,F_star_M,S_star_KB,measured_gamma,predicted_K_squared_Cin,agreement,failure_mode
+ViT-Tiny/16,transformer,no,16,3,34.401792,147.75,192.9746,768,measured=192.97 vs predicted=768 (ratio=0.251),transformer (multi-head attn = fork-join)
+DeiT-Tiny/16,transformer,no,16,3,34.401792,147.75,192.9746,768,measured=192.97 vs predicted=768 (ratio=0.251),transformer + distillation token (fork-join)
+FCN-ResNet50,segmentation,no,7,3,26484.498432,1568.0,147.0000,147,measured=147.00 vs predicted=147 (ratio=1.000),encoder-decoder with bilinear upsampling (non-expansion violated)
+DeepLabv3-ResNet50,segmentation,no,7,3,31310.55104,1568.0,147.0000,147,measured=147.00 vs predicted=147 (ratio=1.000),ASPP parallel branches (fork-join) + upsampling
